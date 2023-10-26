@@ -47,3 +47,10 @@ const foodMenu = [
 //  Creating Buttons for food items display 
 const buttons = ['All', 'Breakfast', 'Lunch', 'shakes'];
 
+// getting the MenuitemCategory id 
+const buttonContainer = document.getElementById('Menu-items-category');
+
+// for creating buttons, buttons par forEach ka loop chalega 
+buttons.forEach(function(Button){
+    buttonContainer.innerHTML += `<button class="btn btn-outline-primary" onclick="showItems('${button.toLowerCase()}')">${button}</button>`;
+});
