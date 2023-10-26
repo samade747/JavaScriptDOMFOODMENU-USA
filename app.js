@@ -96,12 +96,12 @@ function showItems(category){
     </div>
     `;
 
-    col.appendchild(div);
+    col.appendChild(div);
     row.appendChild(col);
-
-
-    })
+    });
 
     MenuContainer.appendChild(row);
 
 }
+
+showItems('all');
