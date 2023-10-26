@@ -54,3 +54,4 @@ const buttonContainer = document.getElementById('Menu-items-category');
 buttons.forEach(function(Button){
     buttonContainer.innerHTML += `<button class="btn btn-outline-primary" onclick="showItems('${button.toLowerCase()}')">${button}</button>`;
 });
+
