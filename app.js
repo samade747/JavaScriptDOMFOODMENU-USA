@@ -48,11 +48,12 @@ const foodMenu = [
 const buttons = ['All', 'Breakfast', 'Lunch', 'shakes'];
 
 // getting the MenuitemCategory id 
-const buttonContainer = document.getElementById('Menu-items-category');
+const buttonContainer = document.getElementById('Menu-item');
+console.log(buttonContainer);
 
 // create buttons for each category by forEach loop
-buttons.forEach(function(button){
-    // creaing html code for buttons 
+    buttons.forEach(function(button){
+    // creating html code for buttons 
     buttonContainer.innerHTML += `<button class="btn btn-outline-primary" onclick="showItems('${button.toLowerCase()}')">${button}</button>`;
     
     });
