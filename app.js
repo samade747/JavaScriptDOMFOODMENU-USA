@@ -50,10 +50,14 @@ const buttons = ['All', 'Breakfast', 'Lunch', 'shakes'];
 // getting the MenuitemCategory id 
 const buttonContainer = document.getElementById('Menu-items-category');
 
-// for creating buttons, buttons par forEach ka loop chalega 
-buttons.forEach(function(Button){
+// create buttons for each category by forEach loop
+buttons.forEach(function(button){
+    // creaing html code for buttons 
     buttonContainer.innerHTML += `<button class="btn btn-outline-primary" onclick="showItems('${button.toLowerCase()}')">${button}</button>`;
-});
+    
+    });
+
+
 
 function showItems(category){
     //function call on catoegory button is clicked or show all items 
@@ -104,4 +108,4 @@ function showItems(category){
 
 }
 
-showItems('all');
+showItems('All');
